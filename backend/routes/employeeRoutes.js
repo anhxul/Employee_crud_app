@@ -7,7 +7,7 @@ const {
   updateEmployee,
   deleteEmployee,
   searchEmployees
-} = require('../controllers/employeeController');
+} = require('../backend/controllers/employeeController');
 
 router.get('/search', searchEmployees);
 router.route('/').post(createEmployee).get(getAllEmployees);
